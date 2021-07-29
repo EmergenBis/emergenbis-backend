@@ -23,4 +23,4 @@ class UserLoginAPIView(APIView):
             'token': token
         }
 
-        return Response(data, status=status.HTTP_202_ACCEPTED)
+        return Response(data, status=status.HTTP_201_CREATED)
