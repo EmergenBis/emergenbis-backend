@@ -55,7 +55,7 @@ class UsersSignupSerializer(serializers.Serializer):
         data.pop('password_confirmation')
 
         #Use create_user instead of create
-        user = User.objects.create(username=data['username'],
+        user = User.objects.create_user(username=data['username'],
                                    password=data['password'],
                                    email=data['email']
                                    )
