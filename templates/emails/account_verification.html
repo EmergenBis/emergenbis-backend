@@ -1,10 +1,5 @@
-<p>Welcome @{{ user.username }}<p>
+<p>Welcome {{user.username}}!</p>
 
-<p>
-    Before you start using <b>This App</b> you need to verify your account.
-    Please visit the following <a href="">Link</a> and enter this code.
-</p>
 
-<p style="text-align: center">
-    <code style="text-align: center"> {{token}} </code>
-</p>
+<p>Before you start using This App you need to verify your account.
+    Please visit the following <a href="http://localhost:3000/verification_page?token={{token}}"> Link </a>.</p>
